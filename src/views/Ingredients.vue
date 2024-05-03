@@ -36,7 +36,7 @@ const searchIngredients = computed(() => {
         <router-link 
             v-for="ingredient in searchIngredients"
             :key="ingredient.idIngredient"
-            :to="{name: 'MealsByIngredients', params: {ingredient: ingredient.strIngredients}}" 
+            :to="{name: 'MealsByIngredients', params: {ingredient: ingredient.strIngredient}}" 
             class="bg-white rounded p-3 mb-3 shadow block">
                 <img :src="`http://www.themealdb.com/images/ingredients/${ingredient.strIngredient}-Small.png`" />
                 <h3 class="text-2xl font-bold mb-2">{{ ingredient.strIngredient }}</h3>
